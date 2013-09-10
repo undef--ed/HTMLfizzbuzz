@@ -1,0 +1,24 @@
+div
+{
+counter-increment: i;
+}
+
+html>body>div:nth-child(15n):before
+{
+content:"fizzBuzz";
+}
+
+body>div:nth-child(3n):before
+{
+content:"fizz";
+}
+
+body>div:nth-child(5n):before
+{
+content:"buzz";
+}
+
+div:before
+{
+content:counter(i);
+}
